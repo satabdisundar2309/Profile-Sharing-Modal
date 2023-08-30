@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img7.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+    <title>Share Modal</title>
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="wrapper">
+      <!-- circles -->
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <!-- main container -->
+      <div class="container">
+        <!-- image -->
+        <div><img src="img7.jpg" alt="my-image" /></div>
+        <!-- main heading -->
+        <div class="user-name">
+          <h1 class="heading">Satabdisundar Behera</h1>
+        </div>
+        <!-- bio -->
+        <div class="bio">
+          <h3>Tech Geek And Cinephile</h3>
+        </div>
+        <!-- buttons -->
+        <div class="btn-group">
+          <button class="btn btnShare" onclick="openModal()">
+            <i class="fa-solid fa-share"></i>
+            <div>Share My Profile</div>
+          </button>
+
+          <button class="btn btnFollow">
+            <a href="https://github.com/satabdisundar2309">Follow Me</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- pop-up modal -->
+    <div class="modal">
+      <div class="modal-header">
+        <h1>Share My Profile</h1>
+        <div>
+          <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+        </div>
+      </div>
+      <div>
+        <h3>Share This On</h3>
+        <div class="icon-container">
+          <a
+            href="https://www.facebook.com/satabdisundarbehera2309"
+            class="icon"
+            id="facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://twitter.com/SatabdiBehera23"
+            class="icon"
+            id="twitter"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/satabdisundarbehera2309"
+            class="icon"
+            id="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://github.com/satabdisundar2309"
+            class="icon"
+            id="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://discord.com/decoherencedice"
+            class="icon"
+            id="discord"
+          >
+            <i class="fa-brands fa-discord"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+     <!-- Overlay  -->
+     <div onclick="closeModal()" class="overlay"></div>
+
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
